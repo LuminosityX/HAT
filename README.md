@@ -33,7 +33,7 @@ For HAT on Flickr30K:
 python run.py with data_root=`$DATA_PATH`
 ```
 
-For FNE on MSCOCO:
+For HAT on MSCOCO:
 
 ```bash
 python run.py with coco_config data_root=`$DATA_PATH`
