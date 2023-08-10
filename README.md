@@ -1,5 +1,5 @@
 # HAT
-Implementation of our paper, 'Unifying Two-Stream Encoders with Transformers for Cross-Modal Retrieval.' It is built on top of [METER](https://github.com/zdou0830/METER).
+Implementation of our paper, "[Unifying Two-Stream Encoders with Transformers for Cross-Modal Retrieval](https://arxiv.org/abs/2308.04343)". This repo is built on top of [METER](https://github.com/zdou0830/METER).
 
 ## Introduction
 Cross-modal retrieval is an important and fundamental problem in the field of vision and language, aiming to perceive and understand the semantic correspondences between images and texts. Most existing methods employ two-stream encoders with different architectures for images and texts, e.g., CNN for images and RNN/Transformer for texts. Such discrepancy in architectures may induce different semantic distribution spaces and limit the interactions between images and texts, and further result in inferior alignment between images and texts. To fill this research gap, inspired by recent advances of Transformers in vision tasks, we propose to unify the encoder architectures with Transformers for both modalities. Specifically, we design a cross-modal retrieval framework purely based on two-stream Transformers, dubbed **Hierarchical Alignment Transformers (HAT)**, which consists of an image Transformer, a text Transformer, and a hierarchical alignment module. With such identical architectures, the encoders could produce representations with more similar characteristics for images and texts, and make the interactions and alignments between them much easier. Besides, to leverage the rich semantics, we devise a hierarchical alignment scheme to explore multi-level correspondences of different layers between images and texts. To evaluate the effectiveness of the proposed HAT, we conduct extensive experiments on two benchmark datasets, MSCOCO and Flickr30K. Experimental results demonstrate that HAT outperforms SOTA baselines by a large margin. Specifically, on two key tasks, *i.e.*, image-to-text and text-to-image retrieval, HAT achieves 7.6\% and 16.7\% relative score improvement of Recall@1 on MSCOCO, and 4.4\% and 11.6\% on Flickr30k respectively. 
@@ -62,6 +62,7 @@ python test.py with coco_config data_root=`$DATA_PATH` test_only=True checkpoint
   title={Unifying Two-Stream Encoders with Transformers for Cross-Modal Retrieval},
   author={Bin, Yi and Li, Haoxuan and Xu, Yahui and Xu, Xing and Yang, Yang and Shen, Heng Tao},
   booktitle={ACM Multimedia},
+  doi={10.1145/3581783.3612427},
   year={2023}
 }
 ```
