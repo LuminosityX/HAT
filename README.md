@@ -22,9 +22,9 @@ For details, check the [requirements.txt](https://github.com/LuminosityX/HAT/blo
 
 The raw images can be downloaded from their original sources [here](http://shannon.cs.illinois.edu/DenotationGraph/) and [here](http://mscoco.org/). We refer to the path of extracted files as `$DATA_PATH`.
 
-If you don't want to train from scratch, you can download the pretrained HAT model from [here](https://drive.google.com/file/d/11Zax1FTNnq0rcer8PxZFlx1mf7d-S67n/view?usp=drive_link)  (for Flickr30K model) and [here](https://drive.google.com/file/d/1lQDeGvipaREZcwd7-owfgPidft6f4lHo/view?usp=drive_link)  (for MSCOCO model).
+If you don't want to train from scratch, you can download the pretrained checkpoints of HAT from GoogleDrive, [Flickr30K](https://drive.google.com/file/d/11Zax1FTNnq0rcer8PxZFlx1mf7d-S67n/view?usp=drive_link)  (for Flickr30K dataset) and [MSCOCO](https://drive.google.com/file/d/1lQDeGvipaREZcwd7-owfgPidft6f4lHo/view?usp=drive_link)  (for MSCOCO dataset).
 
-## Train new models
+## Training
 Run `run.py`:
 
 For HAT on Flickr30K:
@@ -40,7 +40,7 @@ python run.py with coco_config data_root=`$DATA_PATH`
 ```
 
 
-## Evaluate trained models
+## Testing with checkpoints
 
 Test on Flickr30K:
 
