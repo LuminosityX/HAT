@@ -45,13 +45,13 @@ python run.py with coco_config data_root=`$DATA_PATH`
 Test on Flickr30K:
 
 ```bash
-python test.py with data_root=`$DATA_PATH` test_only=True checkpoint=`$CHECKPOINT_PATH`
+python run.py with data_root=`$DATA_PATH` test_only=True checkpoint=`$CHECKPOINT_PATH`
 ```
 
 Test on MSCOCO:
 
 ```bash
-python test.py with coco_config data_root=`$DATA_PATH` test_only=True checkpoint=`$CHECKPOINT_PATH`
+python run.py with coco_config data_root=`$DATA_PATH` test_only=True checkpoint=`$CHECKPOINT_PATH`
 ```
 
 
