@@ -61,8 +61,8 @@ python test.py with coco_config data_root=`$DATA_PATH` test_only=True checkpoint
 @inproceedings{bin2023unifying,
   title={Unifying Two-Stream Encoders with Transformers for Cross-Modal Retrieval},
   author={Bin, Yi and Li, Haoxuan and Xu, Yahui and Xu, Xing and Yang, Yang and Shen, Heng Tao},
-  booktitle={ACM Multimedia},
-  doi={10.1145/3581783.3612427},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={3041--3050},
   year={2023}
 }
 ```
